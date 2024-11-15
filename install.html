@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Installing MERN Software</title>
+
+    <link rel="stylesheet" href="./project8_app_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./project8_app_files/main.css">
+
+    <link href='./project8_app_files/css' rel='stylesheet' type='text/css'>
+
+    <script src="./project8_app_files/jquery.min.js"></script> 
+    <script src="./project8_app_files/bootstrap.min.js"></script>
+
+</head>
+
+
+  <body>
+
+    <header>
+        <nav class="navbar" style="background-color: green;">
+            <div class="container" bis_skin_checked="1">
+        
+              <div class="navbar-header" bis_skin_checked="1">
+                <h1 class="navbar-brand">CS6314 Web Programming Languages</h1>
+              </div> 
+            </div>
+        </nav>
+</header>
+
+
+        <main><div class="container">
+  <h1>Installing MERN Software</h1>
+  <p>
+  The programming projects for this class require you to install Node.js and MongoDB.
+  If you don't already have these packages installed on your laptop,
+  follow the instructions below to install them.
+  </p>
+  <h3 class="left-border">Installing Node.js</h3>
+  <p>
+  Install the latest "Long Term Support (LTS)" version of Node.js (currently version 18.15.0).
+  It can be downloaded from the URL
+  <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a>.
+  To verify you have Node.js and its package manager (npm), try running the commands:
+  <div class="code">
+    <pre>node -v</pre>
+  </div>
+  and:
+  <div class="code">
+    <pre>npm -v</pre>
+  </div>
+  which should run and print out the version numbers of your node and npm programs.
+  </p>
+  <h3 class="left-border">Installing MongoDB</h3>
+  <p>
+  Install the <a href="https://www.mongodb.com/what-is-mongodb">MongoDB Community Edition</a> from the website
+  <a href="https://docs.mongodb.com/manual/administration/install-community/">https://docs.mongodb.com/manual/administration/install-community/</a>.
+  </p>
+  <p>
+  Once you start the MongoDB server using the command
+  <pre>mongod (the exact arguments depend on where you placed the database)</pre>
+  MongoDB needs a folder/directory to store the database. Depending on how you installed MongoDB, 
+  you may need to create a folder. For example, on MacOS you could create the folder <code>/usr/local/var/mongodb</code> 
+  and run MongoDB with the command:
+  <pre>mongod --dbpath /usr/local/var/mongodb</pre>
+  you should be able to directly interact with the MongoDB database by running the command:
+  <div class="code">
+    <pre>mongosh</pre>
+  </div>
+  Type help at the command prompt to see the available commands.
+  </p>
+  <p>
+    For Windows users, you may need to add the location of where MongoDB was installed to your environment path variable in order to run
+    the commands. 
+    This is usually located at <pre>C:\Program Files\MongoDB\Server\&lt;version_number&gt;\bin</pre>    
+  </p>
+
+</div>
+</main>
+
+    <footer>
+  <div class="container text-center">
+    <small class="text-muted">
+    	Modified version of the design by Raymond Luong for CS142 at Stanford University
+    	<br>
+    	Powered by <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://jekyllrb.com" target="_blank">Jekyll</a> – <a href="website.html"><strong>learn more</strong></a>
+    </small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>
